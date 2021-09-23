@@ -50,7 +50,7 @@ function init(){
 
     const LocalBasemap = new ol.layer.Tile({
         source: new ol.source.XYZ({
-            url: "/output/test/{z}/{x}/{y}.png"
+            url: "output/test/{z}/{x}/{y}.png"
         }),
         visible:false,
         title:"LocalBasemap"
