@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 7vh 92vh;
+}
+
+.grid-1{
+  background: rgba(79, 146, 79, 0.651);
+  overflow: hidden;
+  color: #f4f4f4;
+  font-size: 13px;
+  font-family: "Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1em;
+}
+
+.grid-2{
+  z-index: 1;
+}
+
+.sidebar{
+    margin-left: 4vw;
+}
+
+.ol-mouse-position{
+    position: relative;
+    display:inline-block;
+    padding: 2px;
+    top: 34.5rem ;
+    background-color:rgba(81, 104, 82, 0.6);
+    color: rgb(255, 255, 255);
+    left:7rem;
+    
+}
+
+.ol-scale-line{
+    left: 1rem;
+    bottom: 11rem;
+}
+
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color:rgb(71, 70, 70);
+    justify-content: center;
+    align-items: center;
+    animation: loader-wrapper 5s infinite ease;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 238, 238);
+    animation: loader-inner 2s infinite ease-in;
+  }
+
+  .locate {
+    top: 3em;
+    right: .5em;
+  }
+
+  
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
+
+.overlay-container {
+  text-align:center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  font-family: 'Gowun Batang', serif;
+  font: 1em;
+  color: cornsilk;
+    
+  }
+
+.ZoomTo{ 
+  top:0.5rem;
+  left:0.5rem;
+  } 
+
+.SwitchBasemap{
+  top:3rem;
+  left:0.5rem;
+}
+
+.ExportToGeoJSON{
+  top: 5.5rem;
+  left:0.5rem;
+}
+
+.LoadGeoJSON{
+  top:3rem;
+  right:0.5rem;
+}
+
+#ZoomToBt{ 
+  background: url(images/navigateoutline.svg) no-repeat top left;
+  background-size: contain;
+  background-color: rgba(0, 60, 136, 0.5);
+  background-image: rgb(255,255,255);
+  cursor: pointer;
+  display: inline-block;
+ 
+  }
+
+  #SwitchBasemapBt{
+  background: url(images/mapoutline.svg) ;
+  background-size: contain;
+  background-color: rgba(0, 60, 136, 0.5);
+  cursor: pointer;
+  display: inline-block;
+  }
+
+  #ExportToGJSONBt{
+    background: url(images/cloud-download-outline.svg) ;
+    background-size: contain;
+    background-color: rgba(0, 60, 136, 0.5);
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  #LoadGJSONBt{
+    background: url(images/cloud-upload-outline.svg) ;
+    background-size: contain;
+    background-color: rgba(0, 60, 136, 0.5);
+    cursor: pointer;
+    display: inline-block;
+  }
+
+
+ 
+  
+
+
+ 

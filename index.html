@@ -1,0 +1,42 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GeoApp</title>
+  <link rel="stylesheet" href="v6.4.3-dist/ol.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="loader-wrapper">
+  <span class="loader">
+    <span class="loader-inner"></span> 
+  </span>
+  </div>
+  <div class="grid-container">
+    <div class="grid-1">
+      <div class="sidebar" id="NomikToolBar">
+        <h4>ΓΕΩΓΡΑΦΙΚΗ ΥΠΗΡΕΣΙΑ ΣΤΡΑΤΟΥ</h4>
+        <p id='geolocation' style= "display: none;"></p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div  id='js-map' class="map">
+      </div>
+     </div>
+  </div>
+
+
+  <script src='jquery/jquery-3.6.0.js'></script>
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut(4500);
+    });
+</script>
+  <script src='v6.4.3-dist/ol.js'></script>
+  <script src="https://cdn.maptiler.com/ol-mapbox-style/v5.0.2/olms.js"></script>
+  <script src="FileSaver.js"></script>
+  <script src='main.js'></script>
+</body>
+</html>
